@@ -8,9 +8,9 @@
     </div>
 
     <div class="links">
+        <a href="#Features">Tools</a>
         <a href="#Token">Token</a>
         <a href="#Market">About</a>
-        <a href="#Features">Tools</a>
     </div>
 </header>
 
