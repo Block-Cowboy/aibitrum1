@@ -24,7 +24,9 @@
             <h1>A<span style="color: #21e1fd;">i</span>Bitrum</h1>
             <p>AI trading solutions</p>
             <div class="wrap">
-                <button class="button">Buy $AIB</button>
+                <a href="https://app.uniswap.org/#/swap?outputCurrency=0x579174AE0e882607Db551E0d0e3B4F89D6E98EEf&inputCurrency=ETH">
+                    <button class="button">Buy $AIB</button>
+                </a>
             </div>
 
             <!-- <div class="animation">
@@ -108,7 +110,9 @@
 
         <div class="contract-address-container">
             <div>
-                <img src="332.png" alt="Logo">
+                <a href="https://arbiscan.io/token/0x579174ae0e882607db551e0d0e3b4f89d6e98eef">
+                    <img src="332.png" alt="Logo">
+                </a>
                 <p> Contract Address:</p>
             </div>
             <span on:click="{copy}" on:keypress="{copy}" class="contract-address">{address}</span>
@@ -128,6 +132,13 @@
             <div>
                 <h1>Buy/Sell Fees</h1>
                 <p>0%/0%</p>
+            </div>
+
+            <div>
+                <h1>Team Wallet</h1>
+                <a href="https://arbiscan.io/token/0x579174ae0e882607db551e0d0e3b4f89d6e98eef?a=0x7d935e4cc6d5f14e4087cdf21194dea80d06d210">
+                    <p>0x7D...d210</p>
+                </a>
             </div>
         </div>
 
@@ -567,10 +578,16 @@
         justify-content: baseline;
     }
 
-    .contract-address-container > div > img {
+    .contract-address-container > div > a > img {
         width: 30px;
         height: auto;
         margin-right: 10px;
+        cursor: pointer;
+        transition: all 0.3s linear;
+    }
+
+    .contract-address-container > div > a > img:hover {
+        transform: scale(1.1);
     }
 
     .contract-address {
@@ -645,6 +662,22 @@
         font-size: 17px;
         align-items: center;
         margin: 0px 0px 10px 0px;
+    }
+
+    .sec3-info2 > div > a {
+        text-decoration: none;
+    }
+
+    .sec3-info2 > div > a > p {
+        color: #ffffff;
+        font-size: 17px;
+        align-items: center;
+        margin: 0px 0px 10px 0px;
+        transition: all 0.2s linear;
+    }
+
+    .sec3-info2 > div > a > p:hover {
+        color: #21e1fd;
     }
 
 
